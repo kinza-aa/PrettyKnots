@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fffaff;
+    color: #44334d;
+}
+
+header {
+    background-color: #eadcf2;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    color: #67477b;
+    font-size: 35px;
+    font-family: Georgia, serif;
+}
+
+header p{
+    color: #725b7e;
+    margin-top: 5px;
+}
+nav {
+    background-color: #68477b;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 25px;}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #f2d9f5;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f7edf8;
+    gap: 30px;
+}
+.hero-text {
+    width: 45%;
+}
+
+.hero-text h2 {
+    font-size: 38px;
+    color: #67477b;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.hero img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.btn {
+    display: inline-block;
+    background-color: #68477b;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background-color: #432d50;
+}
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.welcome h2 {
+    color: #68477b;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    margin: 8px;
+}
+.services {
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f0fa;
+}
+
+.services h2 {
+    color: #68477b;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background-color: white;
+    padding: 30px;
+    width: 30%;
+    border-radius: 12px;
+}
+
+.service h3 {
+    color: #68477b;
+    margin-bottom: 12px;
+}
+.featured,
+.products {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.featured h2,
+.page-heading h2 {
+    color: #68477b;
+    margin-bottom: 15px;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card{
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #eadcf2;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px #e8ddec;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 12px 0;
+    color: #68477b;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.page-heading{
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #f3e8f6;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.about-section img {
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.about-section div {
+    width: 50%;
+}
+.about-section h2 {
+    color: #68477b;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 50px;
+}
+.contact-info{
+    width: 40%;
+}
+
+.contact-info h2{
+    color: #68477b;
+    margin-bottom: 20px;
+}
+
+.contact-info p{
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    width: 45%;
+}
+.order-section {
+    padding: 40px 20px;
+}
+.order-form {
+    max-width: 550px;
+    margin: auto;
+}
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    color: #68477b;
+    font-weight: bold;
+}
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cdb9d8;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+}
+
+form button {
+    margin-top: 20px;
+}
+.cart-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    background-color: #f7edf8;
+    border-radius: 12px;
+}
+.cart-item img {
+    width: 150px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-item h3 {
+    color: #68477b;
+    margin-bottom: 10px;
+}
+.cart-total {
+    background-color: #f8f0fa;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.cart-total h3,
+.cart-total p {
+    margin-bottom: 12px;
+}
+.text-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #68477b;
+}
+footer {
+    background-color: #68477b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+/* TABLET RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero {
+        padding: 30px;
+    }
+    .hero-text h2 {
+        font-size: 30px;
+    }
+    .service-container {
+        flex-wrap: wrap;
+    }
+    .service {
+        width: 45%;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+    nav {
+        gap: 15px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .hero-text,
+    .hero img {
+        width: 100%;
+    }
+    .hero img {
+        height: 220px;
+    }
+    .hero-text h2 {
+        font-size: 28px;
+    }
+    .service-container {
+        flex-direction: column;
+    }
+    .service {
+        width: 100%;
+    }
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+    .about-section {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .about-section img,
+    .about-section div {
+        width: 100%;
+    }
+.contact-section {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+    .cart-section {
+        margin: 20px;
+    }
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cart-item img {
+        width: 100%;
+        height: 220px;
+    }
+
+}
